@@ -1,5 +1,16 @@
 let userInput = document.getElementById('userInput');
 let list =[]
+
+userInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        addItem();
+    }
+});
+userInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Delete') {
+        deleteLastItem();
+    }
+});
 function addItem(){
     if (userInput.value.trim() === "") {
         alert('input cannot be empty')
