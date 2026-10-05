@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font for clean modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="cart-card">
+        <h2 class="cart-title">My Task Manager</h2>
+        <p class="cart-subtitle">Keep track of your daily goals</p>
+        
+        <div class="input-group">
+            <input id="userInput" type="text" placeholder="What do you need to do today?" class="cart-input">
+        </div>
+
+        <div class="button-group">
+            <button class="btn btn-primary" onclick="addItem()">Add Task</button>
+            <button class="btn btn-green" onclick="deleteLastItem()">Delete Last</button>
+            <button class="btn btn-danger" onclick="deleteAllItem()">Clear All</button>
+        </div>
+
+        <div id="display" class="cart-display">Your tasks will show here</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
